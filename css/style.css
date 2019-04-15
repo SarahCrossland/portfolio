@@ -1,6 +1,4 @@
-WHY IS ABOUT NOT LIKE 1ST BLUEBELL SECTION? FLEX CLASS ON BOTH-DONT KNOW WHAT IT DOES? AND I HAVE A PROJECT CLASS IN CSS BUT NOT IN HTML
-want to add margin around all of the text in each section- had to add right margin to p temperarily
-body {
+WHY IS ABOUT NOT LIKE 1ST BLUEBELL SECTION? FLEX CLASS ON BOTH-DONT KNOW WHAT IT DOES? AND I HAVE A PROJECT CLASS IN CSS BUT NOT IN HTML want to add margin around all of the text in each section- had to add right margin to p temperarily body {
   font-family: 'Cardo', serif;
   font-size: 18px;
   color: #2b2827;
@@ -48,7 +46,6 @@ header::before {
 
 .sidenav a:hover {
   color: #f1f1f1;
-
 }
 
 .sidenav .closebtn {
@@ -59,17 +56,28 @@ header::before {
   margin-left: 50px;
 }
 
+.burgermenu {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
 #main {
   transition: margin-left .5s;
   padding: 16px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }
-
-
 
 h1, h2, h3, h4, h5, h6, nav, .scroll-bar {
   font-family: 'Cardo', serif;
@@ -83,6 +91,7 @@ h1 {
   font-variant: normal;
   text-transform: none;
 }
+
 .heroh2 {
   font-size: 50px;
   font-style: italic;
@@ -93,7 +102,6 @@ h1 {
   margin: 40px 0;
 }
 
-
 h2 {
   font-size: 42px;
   letter-spacing: 1px;
@@ -102,8 +110,6 @@ h2 {
   text-transform: uppercase;
   margin: 20px 0;
 }
-
-
 
 h3 {
   font-family: 'Cardo', serif;
@@ -130,11 +136,10 @@ h4 {
   margin: 20px 0;
 }
 
-
 p {
   font-family: 'Cardo', serif;
   font-size: 18px;
-  letter-spacing:0px;
+  letter-spacing: 0px;
   word-spacing: 0px;
   line-height: 26px;
   font-weight: normal;
@@ -146,12 +151,10 @@ p {
 }
 
 nav {
-
   position: absolute;
   top: 45px;
   right: 60px;
   color: #2b2827;
-
 }
 
 nav a, .scroll-bar a {
@@ -170,8 +173,8 @@ nav a:hover {
   text-decoration: line-through;
 }
 
- /*VIEW WEBSITE LINK*/
- a {
+/*VIEW WEBSITE LINK*/
+a {
   color: #2b2827;
   text-transform: none;
   text-decoration: none;
@@ -186,7 +189,7 @@ nav a:hover {
   transform: translate(-50%, -50%);
 }
 
-.content-container {
+/* .content-container {
   position: relative;
   background-size: cover;
 }
@@ -201,21 +204,22 @@ nav a:hover {
   background-image: url(../images/cloud1.jpg);
   filter: grayscale(100%)brightness(100%)opacity(10%)saturate(80%);
   z-index: -2;
-}
-
+} */
 .scroll-bar a {
   font-size: 18px;
   display: block;
   text-align: center;
-font-style: italic; padding: 0px 0px 0px 0px;
+  font-style: italic;
+  padding: 0px 0px 0px 0px;
   color: black;
   text-transform: lowercase;
   padding: 0px;
 }
 
 .scroll bar {
-padding: 20px;
+  padding: 20px;
 }
+
 .scroll-bar-bottom {
   padding: 20px;
 }
@@ -258,10 +262,11 @@ hr {
 }
 
 .work {
-  padding: 20px;
+  /* padding: 20px;
   background-image: url(../images/texture.jpg);
   background-size: cover;
-  filter: grayscale(100%);
+  filter: grayscale(100%);*/
+  background-color: grey;
 }
 
 .laptop {
@@ -270,11 +275,26 @@ hr {
 
 section {
   min-height: 500px;
-  text-align: center;
+  padding-left: 20px;
 }
 
 .left-aligned {
   text-align: left;
+}
+
+.padding-left {
+  padding-left: 110px;
+}
+
+#about-section {
+  min-height: 500px;
+  padding: 100px;
+}
+
+.sarahcrosslandportrait {
+  border-radius: 50%;
+  width: 200%;
+  height: 200%;
 }
 
 /*footer {
@@ -284,6 +304,10 @@ section {
   text-align: center;
   padding: 30px 0 30px 0;
 }*/
+.email-link:hover {
+  text-decoration: underline;
+}
+
 footer::before {
   content: "";
   position: absolute;
@@ -296,15 +320,15 @@ footer::before {
   z-index: -2;
 }
 
-footer{font-family: 'Cardo', serif;
+footer {
+  font-family: 'Cardo', serif;
   font-size: 13px;
-text-transform: none;
-text-decoration: none;
-font-style: normal;
-padding: 35px 25px;
-margin: 0 0px;
-color: #ffffff;
-text-align: center;
-background-color: #2b2827;
-
+  text-transform: none;
+  text-decoration: none;
+  font-style: normal;
+  padding: 35px 25px;
+  margin: 0 0px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #2b2827;
 }

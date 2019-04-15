@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width" />
   <meta charset="utf-8" />
   <!-- Stylesheets -->
+
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -29,29 +30,28 @@
     </nav> -->
 
     <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Work</a>
-  <a href="#">About</a>
-</div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#firstsection">Work</a>
+      <a href="#about-section">About</a>
+    </div>
 
-<div id="main">
+    <span class="burgermenu" onclick="openNav()">&#9776;
+      <!--is the burger menu how do I move this to the top left? will this work?--> </span>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<!--is the burger menu how do I move this to the top left? will this work?--> </span>
-</div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
-}
-</script>
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
 
     <div class="header-content">
       <h1>Sarah Crossland</h1>
@@ -67,6 +67,8 @@ function closeNav() {
         <img src="images/down-arrow.png"></a>
     </div>
 
+
+
     <section id="firstsection" class="row flex">
 
 
@@ -79,17 +81,18 @@ function closeNav() {
         <h3>Small Business Website</h3>
         <h4>HTML & CSS</h4>
 
-        <a class="view-website" href="#">View Website</a>
+        <a class="view-website" href="https://sarahcrossland.github.io/diy-project/" target="_blank">View Website</a>
       </div>
     </section>
 
-    <section class="row">
 
-      <div class="six columns left-aligned">
-        <h3>Munch</h3>
-        <h4>Food Blog</h4>
 
-        <h5>HTML & CSS</h5>
+    <section class="row flex">
+
+      <div class="six columns left-aligned padding-left">
+        <h2>Munch</h2>
+        <h3>Food Blog</h3>
+        <h4>HTML & CSS</h4>
         <a class="view-website" href="#">View Website</a>
       </div>
 
@@ -99,60 +102,75 @@ function closeNav() {
 
     </section>
 
-    <section class="row">
 
-      <img src="images/laptop.png" class="laptop">
-      <div>
-        <h3>Granular</h3>
-        <h4>Filter Website</h4>
+    <section class="row flex">
 
-        <h5>HTML & CSS</h5>
-        <a class="view-website" href="#">View Website</a>
+
+      <div class="six columns">
+        <img src="images/laptop.png" class="laptop">
       </div>
-    </section>
 
-    <section class="row">
+      <div class="six columns left-aligned">
+        <h2>Granular</h2>
+        <h3>Filter Website</h3>
+        <h4>HTML & CSS</h4>
 
-      <img src="images/laptop.png" class="laptop">
-
-      <div>
-        <h3>Last Studio</h3>
-        <h4>Photographers Online Portfolio</h4>
-
-        <h5>HTML, CSS & Javascript</h5>
-        <a class="view-website" href="#">View Website</a>
-      </div>
-    </section>
-
-    <section class="row">
-
-
-      <img src="images/laptop.png" class="laptop">
-
-      <div>
-        <h3>Javascript Slider</h3>
-        <h4>Slide Randomising Website</h4>
-
-        <h5>HTML, CSS & Javascript</h5>
         <a class="view-website" href="#">View Website</a>
       </div>
     </section>
 
 
 
+    <section class="row flex">
 
-    <section id="about-section" class="row flex " >
+      <div class="six columns left-aligned padding-left">
+        <h2>Last Studio</h2>
+        <h3>Photographers Online Portfolio</h3>
+        <h4>HTML, CSS & Javascript</h4>
+        <a class="view-website" href="#">View Website</a>
+      </div>
+
+      <div class="six columns">
+        <img src="images/laptop.png" class="laptop">
+      </div>
+
+    </section>
+
+
+
+    <section class="row flex">
+
+
+      <div class="six columns">
+        <img src="images/laptop.png" class="laptop">
+      </div>
+
+      <div class="six columns left-aligned">
+        <h2>Javascript Slider</h2>
+        <h3>Slide Randomising Website</h3>
+        <h4>HTML, CSS & Javascript</h4>
+
+        <a class="view-website" href="#">View Website</a>
+      </div>
+    </section>
+
+
+
+    <section id="about-section" class="row flex ">
 
 
       <div class="four columns">
-        <img src="images/laptop.png" class="laptop">
+        <img src="images/avatar.png" alt="Sarah Crossland Portrait" class="sarahcrosslandportrait">
       </div>
 
       <div class="eight columns left-aligned">
         <h2>About Me</h2>
-<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis scelerisque porta. Vestibulum porta nunc ut nunc egestas elementum. Morbi facilisis pellentesque augue, sit amet lacinia dolor porttitor eu. Etiam ut nisl justo. Proin vel pharetra erat. Proin finibus enim a nunc consequat consequat. Nullam molestie nisl metus, in lobortis odio varius sed. Sed eget nisi mauris. Aliquam efficitur turpis nec turpis lobortis, et condimentum turpis elementum. Sed rutrum auctor lorem, in maximus turpis ultrices et. Maecenas eget porta dui. Donec metus augue, facilisis ac urna eu, ultrices hendrerit dui.
- </p>
- <p> Get in touch at sarahcrossland@outlook.com. </p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis scelerisque porta. Vestibulum porta nunc ut nunc egestas elementum. Morbi facilisis pellentesque augue, sit amet lacinia dolor porttitor eu. Etiam ut nisl justo.
+          Proin vel pharetra erat. Proin finibus enim a nunc consequat consequat. Nullam molestie nisl metus, in lobortis odio varius sed. Sed eget nisi mauris. Aliquam efficitur turpis nec turpis lobortis, et condimentum turpis elementum. Sed rutrum
+          auctor lorem, in maximus turpis ultrices et. Maecenas eget porta dui. Donec metus augue, facilisis ac urna eu, ultrices hendrerit dui.
+        </p>
+        <p> Get in touch at <a class="email-link" href="mailto:sarahcrossland@outlook.com">sarahcrossland@outlook.com</a></p>
+
 
       </div>
     </section>
