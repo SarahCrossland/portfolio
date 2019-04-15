@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>ADD TITLE</title>
+  <title>Sarah Crossland Design</title>
   <meta name="description" content="ADD DESCRIPTION" />
   <meta name="viewport" content="width=device-width" />
   <meta charset="utf-8" />
@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Serif:400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cardo:400,400i,700" rel="stylesheet">
+
 
 
   <link rel="stylesheet" href="css/lanes.css" />
@@ -20,11 +22,36 @@
 
 <body id="#top">
   <header>
-    <nav>
+    <!--<nav>
       <a href="#">Work</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
-    </nav>
+    </nav> -->
+
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Work</a>
+  <a href="#">About</a>
+</div>
+
+<div id="main">
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<!--is the burger menu how do I move this to the top left? will this work?--> </span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
 
     <div class="header-content">
       <h1>Sarah Crossland</h1>
@@ -90,7 +117,7 @@
 
       <div>
         <h3>Last Studio</h3>
-        <h4>A photographers online portfolio</h4>
+        <h4>Photographers Online Portfolio</h4>
 
         <h5>HTML, CSS & Javascript</h5>
         <a class="view-website" href="#">View Website</a>
@@ -112,6 +139,25 @@
     </section>
 
 
+
+
+    <section id="about-section" class="row flex " >
+
+
+      <div class="four columns">
+        <img src="images/laptop.png" class="laptop">
+      </div>
+
+      <div class="eight columns left-aligned">
+        <h2>About Me</h2>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis scelerisque porta. Vestibulum porta nunc ut nunc egestas elementum. Morbi facilisis pellentesque augue, sit amet lacinia dolor porttitor eu. Etiam ut nisl justo. Proin vel pharetra erat. Proin finibus enim a nunc consequat consequat. Nullam molestie nisl metus, in lobortis odio varius sed. Sed eget nisi mauris. Aliquam efficitur turpis nec turpis lobortis, et condimentum turpis elementum. Sed rutrum auctor lorem, in maximus turpis ultrices et. Maecenas eget porta dui. Donec metus augue, facilisis ac urna eu, ultrices hendrerit dui.
+ </p>
+ <p> Get in touch at sarahcrossland@outlook.com. </p>
+
+      </div>
+    </section>
+
+
     <div class="scroll-bar scroll-bar-bottom">
       <a href="#top"><img src="images/up-arrow.png">
         Scroll Up
@@ -120,7 +166,7 @@
   </div>
 
   <footer>
-    <p>Copyright 2019 - Sarah Crossland Design</p>
+    <p>Sarah Crossland Design © 2019</p>
   </footer>
 
 
