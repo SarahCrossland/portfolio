@@ -131,12 +131,17 @@
 
   $.fn.extend({
     scrollable: function(dir) {
-      var scrl = getScrollable.call(this, {dir: dir});
+      var scrl = getScrollable.call(this, {
+        dir: dir
+      });
 
       return this.pushStack(scrl);
     },
     firstScrollable: function(dir) {
-      var scrl = getScrollable.call(this, {el: 'first', dir: dir});
+      var scrl = getScrollable.call(this, {
+        el: 'first',
+        dir: dir
+      });
 
       return this.pushStack(scrl);
     },
@@ -215,12 +220,12 @@
 
       if (options.delegateSelector !== null) {
         this
-        .off('click.smoothscroll', options.delegateSelector)
-        .on('click.smoothscroll', options.delegateSelector, clickHandler);
+          .off('click.smoothscroll', options.delegateSelector)
+          .on('click.smoothscroll', options.delegateSelector, clickHandler);
       } else {
         this
-        .off('click.smoothscroll')
-        .on('click.smoothscroll', clickHandler);
+          .off('click.smoothscroll')
+          .on('click.smoothscroll', clickHandler);
       }
 
       return this;
@@ -228,7 +233,9 @@
   });
 
   var getExplicitOffset = function(val) {
-    var explicit = {relative: ''};
+    var explicit = {
+      relative: ''
+    };
     var parts = typeof val === 'string' && rRelative.exec(val);
 
     if (typeof val === 'number') {
@@ -248,7 +255,9 @@
       $tgt[0].focus();
 
       if (!$tgt.is(document.activeElement)) {
-        $tgt.prop({tabIndex: -1});
+        $tgt.prop({
+          tabIndex: -1
+        });
         $tgt[0].focus();
       }
     }
@@ -270,9 +279,13 @@
     var aniOpts = {};
 
     if (explicitOffset.px) {
-      opts = $.extend({link: null}, $.fn.smoothScroll.defaults, optionOverrides);
+      opts = $.extend({
+        link: null
+      }, $.fn.smoothScroll.defaults, optionOverrides);
     } else {
-      opts = $.extend({link: null}, $.fn.smoothScroll.defaults, options || {}, optionOverrides);
+      opts = $.extend({
+        link: null
+      }, $.fn.smoothScroll.defaults, options || {}, optionOverrides);
 
       if (opts.scrollElement) {
         offPos = 'position';
@@ -355,4 +368,3 @@
   $.fn.smoothScroll.defaults = defaults;
 
 }));
-

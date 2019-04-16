@@ -1,11 +1,12 @@
-WHY IS ABOUT NOT LIKE 1ST BLUEBELL SECTION? FLEX CLASS ON BOTH-DONT KNOW WHAT IT DOES? AND I HAVE A PROJECT CLASS IN CSS BUT NOT IN HTML want to add margin around all of the text in each section- had to add right margin to p temperarily body {
+/* WHY IS ABOUT NOT LIKE 1ST BLUEBELL SECTION? FLEX CLASS ON BOTH-DONT KNOW WHAT IT DOES? AND I HAVE A PROJECT CLASS IN CSS BUT NOT IN HTML want to add margin around all of the text in each section- had to add right margin to p temperarily  */
+body {
   font-family: 'Cardo', serif;
   font-size: 18px;
   color: #2b2827;
 }
 
 header {
-  height: 90vh;
+  height: 100vh;
   text-align: center;
 }
 
@@ -216,8 +217,11 @@ a {
   padding: 0px;
 }
 
-.scroll bar {
-  padding: 20px;
+.scroll-bar-top {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .scroll-bar-bottom {
