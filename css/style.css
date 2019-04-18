@@ -70,16 +70,6 @@ header::before {
   padding: 16px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
 h1, h2, h3, h4, h5, h6, nav, .scroll-bar {
   font-family: 'Cardo', serif;
 }
@@ -274,7 +264,8 @@ hr {
 }
 
 .laptop {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   display: block;
   margin: 0 auto;
 }
@@ -337,4 +328,43 @@ footer {
   color: #ffffff;
   text-align: center;
   background-color: #2b2827;
+}
+
+@media screen and (max-width: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  .header-content {
+    width: 100%;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .flex-mob {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  section {
+    padding: 0 15px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  #about-section {
+    padding: 0 15px;
+  }
+
+  .padding-left {
+    padding-left: 0px;
+  }
 }
